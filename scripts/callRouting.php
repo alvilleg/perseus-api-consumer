@@ -143,7 +143,7 @@
 		$status = $route_details_result['status'];
 		echo $status."<br>";
 		sleep(20);
-	}while($status == 'NF');
+	}while($status == 'RUNNING');
 	
 	/// The search is over, so read the result
 	echo 'Route result';
