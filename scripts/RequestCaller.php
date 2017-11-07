@@ -22,9 +22,10 @@ class RequestCaller{
 		//
   		$headers = array(
   		);
-  		$handle = curl_init();
-  		curl_setopt($handle, CURLOPT_URL, $url);
+  		$handle = curl_init(); // $url
+  		curl_setopt($handle, CURLOPT_URL, 'http://pbi.tracksalesonline.com/gda/getdata.jsp?idsesion=ebfbe46d05a111da1285f45b73d85fb9cb14c01900bac758e7d25a85702c4c33b8abcadd0b50f7e0056d188085099813421f85e6dff9b4309b71d718f2ea4ffe053c8e32e03ccf6323f66cd27d80c9f8');
   		//curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);
+  		curl_setopt($handle, CURLOPT_VERBOSE, true);
   		curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
   		//curl_setopt($handle, CURLOPT_SSL_VERIFYHOST, false);
   		//curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
